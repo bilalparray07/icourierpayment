@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Site</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("FrS7e-haZ-BGatxsb");
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- top section -->
+    <div class="container-fluid top-section">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Courier Activation Payment Gateway</h1>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="container-fluid hero-section p-0 m-0">
+      <div class="row">
+        <div class="col">
+          <img src="images/image.webp" class="hero-img" alt="hero-img" />
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- form sectioon -->
+
+    <div class="container-fluid form-section">
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <div class="card form-card">
+            <div class="card-body">
+              <form class="needs-validation" novalidate id="myForm">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Select Bank*</label>
+                  <select class="form-control" id="bank" required>
+                    <option>State Bank of India (SBI)</option>
+                    <option>HDFC Bank</option>
+                    <option>ICICI Bank</option>
+                    <option>Punjab National Bank (PNB)</option>
+                    <option>Axis Bank</option>
+                    <option>Bank of Baroda (BoB)</option>
+                    <option>Canara Bank</option>
+                    <option>Union Bank of India</option>
+                    <option>Kotak Mahindra Bank</option>
+                    <option>IndusInd Bank</option>
+                    <option>IDBI Bank</option>
+                    <option>Indian Bank</option>
+                    <option>Bank of India</option>
+                    <option>Yes Bank</option>
+                    <option>Federal Bank</option>
+                    <option>RBL Bank</option>
+                    <option>Standard Chartered Bank</option>
+                    <option>DBS Bank India</option>
+                    <option>Citibank India</option>
+                    <option>HSBC India</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Number*</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="phone"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="amt">Amount*</label>
+                  <input type="number" class="form-control" id="amt" required />
+                </div>
+                <div class="form-group">
+                  <label for="upi">UPIN*</label>
+                  <input type="number" class="form-control" id="upi" required />
+                </div>
+                <!-- Button -->
+                <div class="container-fluid">
+                  <div class="row">
+                    <div
+                      class="col d-flex justify-content-center align-items-center"
+                    >
+                      <button
+                        type="submit"
+                        class="btn btn-success"
+                        id="submitBtn"
+                      >
+                        Pay Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- form ednd -->
+
+    <!-- last Section -->
+    <div class="container-fluid hero-section p-0 m-0">
+      <div class="row">
+        <div class="col">
+          <img src="images/footer.webp" class="hero-img" alt="hero-img" />
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>

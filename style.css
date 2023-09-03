@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden !important;
+}
+.top-section {
+  padding: 20px 20px 15px 20px;
+  background-color: rgb(175, 240, 202);
+  width: 100%;
+}
+.top-section h1 {
+  line-height: normal;
+  text-align: center;
+  font-size: 40px;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100vw;
+}
+.form-section {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(24, 11, 61);
+}
+.form-card {
+  width: 38rem;
+}
+.form-group {
+  padding: 10px 0;
+}
+@media only screen and (max-width: 450px) {
+  .top-section {
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 10px;
+  }
+  .top-section h1 {
+    font-size: 25px;
+  }
+}
